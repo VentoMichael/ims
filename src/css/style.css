@@ -80,13 +80,14 @@ h2 {
     font-size: 1.5em;
     font-family: "nove", sans-serif;
 }
-
+.logo{
+    color: transparent;
+}
 
 .logo svg {
     min-width: 100px;
     height: auto;
     max-width: 150px;
-    text-indent: -9999px;
 }
 
 .burger {
@@ -711,4 +712,158 @@ h3 {
         max-width: 100px;
         min-width: 100px;
     }
+}
+
+
+
+
+
+
+.scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.scrolling-wrapper-flexbox .card {
+    flex: 0 0 auto;
+    margin-right: 5px;
+}
+
+.card {
+    border: 2px solid var(--yellow);
+    padding: .5em;
+    align-self: center;
+}
+
+.scrolling-wrapper-flexbox {
+    padding: 80px 0 50px;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+}
+.scrolling-wrapper-flexbox::-webkit-scrollbar {
+    display: none;
+}
+
+
+.scrolling-wrapper-flexbox svg {
+    position: absolute;
+    left: 70%;
+    top: 10%;
+}
+
+
+
+
+
+.svgScroll{
+    position: relative;
+}
+.svgScroll svg{
+    position: absolute;
+    left: 70%;
+    margin-top: 50px;
+}
+
+svg rect {
+    -webkit-animation: trackBallSlide 2s linear infinite;
+    animation: trackBallSlide 2s linear infinite;
+}
+@-moz-keyframes trackBallSlide {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    20% {
+        opacity: 1;
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+    33.3% {
+        opacity: 0;
+    }
+    49% {
+        opacity: 0;
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+    50%, 60% {
+        opacity: 0;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+@-webkit-keyframes trackBallSlide {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    20% {
+        opacity: 1;
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+    33.3% {
+        opacity: 0;
+    }
+    49% {
+        opacity: 0;
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+    50%, 60% {
+        opacity: 0;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+@keyframes trackBallSlide {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    20% {
+        opacity: 1;
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+    25% {
+        opacity: 1;
+    }
+    46% {
+        opacity: 0;
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+    }
+    49% {
+        opacity: 0;
+        -webkit-transform: translateX(40px);
+        transform: translateX(40px);
+    }
+    50%, 60% {
+        opacity: 0;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+@keyframes gradient {
+    0% {stroke: url(#linear);}
+    100% {stroke: url(#linear);}
 }
