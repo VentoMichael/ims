@@ -176,13 +176,13 @@
             </li>
             <li class="listItems">
                 <ul>
-                    <li class="currentItem"><a href="index.php">Accueil</a></li>
+                    <li><a href="index.php">Accueil</a></li>
                     <li><a href="photographie.php">Photographie</a></li>
                     <li><a href="photographie.php">Bibliothèque</a></li>
                     <li><a href="about.php">À propos</a></li>
                 </ul>
             </li>
-            <li class="listItemContact">
+            <li class="listItemContact currentItem">
                 <a href="contact.php">Contact</a>
             </li>
         </ul>
@@ -192,60 +192,62 @@
     <section class="containerAboutUs">
         <div class="containerTextAboutUs">
             <h2>
-                Nous, brièvement
+                Contactez-nous
             </h2>
             <p class="aboutUsParagraph">
-                Un lieu pour les livres et la photographie. Un lieu à taille humaine et à la hauteur des images, pour
-                prendre le temps de grignoter avec les yeux, découvrir, échanger!
+                Un renseignement ? Une envie de présenter un project ? N’hésitez pas à parler avec nous, nous nous
+                ferons une joie de vous répondre !
             </p>
-            <a class="ctaContact" href="#">
-                <span>À propos de nous</span>
-            </a>
         </div>
         <div class="containerImageBoxRight">
-            <img class="imageBoxRight" src="src/img/about/000_ISNbefore_005.jpg" alt="Representing the front of the building">
+            <img class="imageBoxRight" src="src/img/about/001_002.jpg" alt="Representing the inside of the building">
         </div>
     </section>
-    <section class="containerPhotographie">
-        <div class="containerImageBoxLeft">
-            <img class="imageBoxleft" src="src/img/photographie.jpg" alt="Representing photography section">
-        </div>
-        <div class="containerTextAboutUs">
-            <h2>
-                Photographie
-            </h2>
-            <p class="aboutUsParagraph">
-                Nos expositions visent à améliorer votre esprit créatif, à vous faire passer du temps en bonne compagnie
-                mais aussi à vous divertir. N'hésitez pas à savoir quand sera la prochaine !
-            </p>
-            <a class="ctaContact" href="#">
-                <span>Toutes les photographies</span>
-            </a>
-        </div>
-    </section>
-    <section class="containerLibrary">
-        <div class="containerTextAboutUs">
-            <h2>
-                Bibliothèque
-            </h2>
-            <p class="aboutUsParagraph">
-                Nos livres sont des milliers et des milliers qui sont entièrement à votre disposition, ils sont là pour
-                vous cultiver, vous faire passer le temps en bonne compagnie. N'hésitez pas à nous envoyer un message,
-                si vous êtes intéressé!
-            </p>
-            <div class="containerBooks">
-                <a class="ctaContact" href="#">
-                    <span>Le livre du mois</span>
-                </a>
-                <a class="ctaContact" href="#">
-                    <span>Tous les livres</span>
-                </a>
+    <section class="containerForm">
+        <h2>
+            Écrivez-nous
+        </h2>
+        <form action="#" method="get" class="form-example">
+            <div class="containerFields">
+                <div class="containerField">
+                    <label for="name">Nom</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="containerField">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="containerField">
+                    <label for="reason">Raison</label>
+                    <select class="minimal" id="reason">
+                        <option value="" disabled selected>---</option>
+                        <option value="See exhibitions">See exhibitions</option>
+                        <option value="See books">See books</option>
+                        <option value="Create an exhibition">Create an exhibition</option>
+                        <option value="Meet to talk">Meet to talk</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <div class="containerImageBoxRight">
-            <img class="imageBoxRight" src="src/img/001_019.jpg" alt="Representing library section">
-        </div>
+            <div class="containerTextarea">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"
+                          rows="10" cols="30"></textarea>
+            </div>
+            <div class="containerSubmit">
+                <input class="" type="submit" value="Envoyer&nbsp;!">
+                <span>
+
+                </span>
+            </div>
+        </form>
     </section>
+    <div class="container__googlemap">
+        <div class="gmap_canvas">
+            <iframe title="Googlemap showing the location" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=place%20vivegnis%206&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+    </div>
 </main>
 <footer>
     <section>

@@ -176,10 +176,10 @@
             </li>
             <li class="listItems">
                 <ul>
-                    <li class="currentItem"><a href="index.php">Accueil</a></li>
+                    <li><a href="index.php">Accueil</a></li>
                     <li><a href="photographie.php">Photographie</a></li>
                     <li><a href="photographie.php">Bibliothèque</a></li>
-                    <li><a href="about.php">À propos</a></li>
+                    <li class="currentItem"><a href="about.php">À propos</a></li>
                 </ul>
             </li>
             <li class="listItemContact">
@@ -189,61 +189,79 @@
     </nav>
 </header>
 <main>
-    <section class="containerAboutUs">
+    <section class="containerAboutUs containerAboutText">
         <div class="containerTextAboutUs">
             <h2>
-                Nous, brièvement
+                À propos de nous
             </h2>
             <p class="aboutUsParagraph">
-                Un lieu pour les livres et la photographie. Un lieu à taille humaine et à la hauteur des images, pour
-                prendre le temps de grignoter avec les yeux, découvrir, échanger!
+
+                Un lieu pour les livres et la photographie, l’Image sans nom est un <i>lieu d’expositions liées à la
+                    photographie et aux livres</i>, souvent les deux. C'est aussi un <i>centre de documentation</i>:
+                avec quelques milliers de titres, principalement de photographie, et d'autres arts également,
+                consultables. Enfin, <i>un atelier d'impression jet d'encre</i> qui est ouvert à toute demande.
+            </p>
+            <p class="aboutUsParagraph">
+                Le lieu se veut un point de rencontre pour tous les amoureux ou <i>amoureux du livre et de la photographie</i>,
+                et depuis février 2018 il propose, sous l'impulsion d'Olivier Cornil, Emmanuel d'Autreppe, Christophe
+                Collas et Matthieu Litt <i>une série d'événements</i> (pour) petits et grands, ateliers et rencontres, lectures
+                et projections, expositions et interventions, séminaires et événements...
+            </p>
+            <p class="aboutUsParagraph">
+                Un lieu à taille humaine et à la hauteur des images, pour prendre le temps de <i>grignoter avec les yeux,
+                découvrir, échanger&nbsp;!</i>
+            </p>
+            <p class="aboutUsParagraph">
+                Nous sommes ouverts pendant les périodes d'exposition et sur rendez-vous
+            </p>
+            <p class="aboutUsParagraph">
+                <a href="mailto:limagesansnom@gmail.com">limagesansnom@gmail.com</a> / <a href="tel:+32485847977">0485 847
+                    977</a>
+            </p>
+            <p class="aboutUsParagraph">
+                Place Vivegnis 6 à 4000 Liège
             </p>
             <a class="ctaContact" href="#">
-                <span>À propos de nous</span>
+                <span>Écrivez nous&nbsp;!</span>
             </a>
         </div>
         <div class="containerImageBoxRight">
-            <img class="imageBoxRight" src="src/img/about/000_ISNbefore_005.jpg" alt="Representing the front of the building">
+            <img class="imageBoxRight" src="src/img/about/000_ISNbefore_005.jpg"
+                 alt="Representing the front of the building">
         </div>
     </section>
-    <section class="containerPhotographie">
-        <div class="containerImageBoxLeft">
-            <img class="imageBoxleft" src="src/img/photographie.jpg" alt="Representing photography section">
-        </div>
-        <div class="containerTextAboutUs">
-            <h2>
-                Photographie
-            </h2>
-            <p class="aboutUsParagraph">
-                Nos expositions visent à améliorer votre esprit créatif, à vous faire passer du temps en bonne compagnie
-                mais aussi à vous divertir. N'hésitez pas à savoir quand sera la prochaine !
-            </p>
-            <a class="ctaContact" href="#">
-                <span>Toutes les photographies</span>
-            </a>
-        </div>
-    </section>
-    <section class="containerLibrary">
-        <div class="containerTextAboutUs">
-            <h2>
-                Bibliothèque
-            </h2>
-            <p class="aboutUsParagraph">
-                Nos livres sont des milliers et des milliers qui sont entièrement à votre disposition, ils sont là pour
-                vous cultiver, vous faire passer le temps en bonne compagnie. N'hésitez pas à nous envoyer un message,
-                si vous êtes intéressé!
-            </p>
-            <div class="containerBooks">
+    <section class="containerAim">
+        <h2>
+            Notre devoir
+        </h2>
+        <div class="containerAims">
+            <div>
+                <section class="containerAimLibrary">
+                    <h3>
+                        Bibliothèque
+                    </h3>
+                    <p>
+                        Vous faire découvrir des miliers de livres grâce a nôtre immense bibliothéque qui est à votre entière disposition&nbsp;!
+                    </p>
+                </section>
                 <a class="ctaContact" href="#">
-                    <span>Le livre du mois</span>
-                </a>
-                <a class="ctaContact" href="#">
-                    <span>Tous les livres</span>
+                    <span>Voir la bibliothèque</span>
                 </a>
             </div>
-        </div>
-        <div class="containerImageBoxRight">
-            <img class="imageBoxRight" src="src/img/001_019.jpg" alt="Representing library section">
+
+            <div>
+                <section class="containerAimPhotographie">
+                    <h3>
+                        Photographie
+                    </h3>
+                    <p>
+                        Améliorer votre esprit créatif grace à nos multiples expositions les unes plus incroyables que les autres&nbsp;!
+                    </p>
+                </section>
+                <a class="ctaContact" href="#">
+                    <span>Voir les photographies</span>
+                </a>
+            </div>
         </div>
     </section>
 </main>
@@ -270,7 +288,7 @@
             Newsletter
         </h2>
         <p>
-            Ne manquez plus aucune importante exposition ! Abonnez-vous à cette newsletter.
+            Ne manquez plus aucune importante exposition&nbsp;! Abonnez-vous à cette newsletter.
         </p>
     </section>
 </footer>

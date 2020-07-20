@@ -47,7 +47,7 @@
                 <a itemprop="url"
                    href="http://localhost:8080/"
                    title="Home page"
-                   class="logo">
+                   class="logo">Back to home
                     <svg enable-background="new 0 0 637.1 400.2" viewBox="0 0 637.1 400.2"
                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <clipPath id="a">
@@ -192,26 +192,6 @@
     <section class="containerAboutUs">
         <div class="containerTextAboutUs">
             <h2>
-                Nous, brièvement
-            </h2>
-            <p class="aboutUsParagraph">
-                Un lieu pour les livres et la photographie. Un lieu à taille humaine et à la hauteur des images, pour
-                prendre le temps de grignoter avec les yeux, découvrir, échanger!
-            </p>
-            <a class="ctaContact" href="#">
-                <span>À propos de nous</span>
-            </a>
-        </div>
-        <div class="containerImageBoxRight">
-            <img class="imageBoxRight" src="src/img/about/000_ISNbefore_005.jpg" alt="Representing the front of the building">
-        </div>
-    </section>
-    <section class="containerPhotographie">
-        <div class="containerImageBoxLeft">
-            <img class="imageBoxleft" src="src/img/photographie.jpg" alt="Representing photography section">
-        </div>
-        <div class="containerTextAboutUs">
-            <h2>
                 Photographie
             </h2>
             <p class="aboutUsParagraph">
@@ -219,32 +199,104 @@
                 mais aussi à vous divertir. N'hésitez pas à savoir quand sera la prochaine !
             </p>
             <a class="ctaContact" href="#">
-                <span>Toutes les photographies</span>
+                <span>Écrivez nous&nbsp;!</span>
             </a>
         </div>
-    </section>
-    <section class="containerLibrary">
-        <div class="containerTextAboutUs">
-            <h2>
-                Bibliothèque
-            </h2>
-            <p class="aboutUsParagraph">
-                Nos livres sont des milliers et des milliers qui sont entièrement à votre disposition, ils sont là pour
-                vous cultiver, vous faire passer le temps en bonne compagnie. N'hésitez pas à nous envoyer un message,
-                si vous êtes intéressé!
-            </p>
-            <div class="containerBooks">
-                <a class="ctaContact" href="#">
-                    <span>Le livre du mois</span>
-                </a>
-                <a class="ctaContact" href="#">
-                    <span>Tous les livres</span>
-                </a>
-            </div>
-        </div>
         <div class="containerImageBoxRight">
-            <img class="imageBoxRight" src="src/img/001_019.jpg" alt="Representing library section">
+            <img class="imageBoxRight" src="src/img/photographie.jpg" alt="Representing the front of the building">
         </div>
+    </section>
+    <section>
+        <h2 class="hidden">
+            Projects
+        </h2>
+        <div class="containerProjects">
+            <section>
+                <img src="src/img/expo/affiches_001.jpg" alt="Poster showing an activity">
+                <h3>
+                    Titre
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur culpa debitis dolores
+                    et fuga illo in incidunt, iusto magni odio perspiciatis praesentium quam quas saepe, sed tempora
+                    vitae voluptatibus.
+                </p>
+                <a class="ctaContact" href="#">
+                    <span>Voir plus en détails</span>
+                </a>
+            </section>
+            <section>
+                <img src="src/img/expo/affiches_001.jpg" alt="Poster showing an activity">
+                <h3>
+                    Titre
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur culpa debitis dolores
+                    et fuga illo in incidunt, iusto magni odio perspiciatis praesentium quam quas saepe, sed tempora
+                    vitae voluptatibus.
+                </p>
+                <a class="ctaContact" href="#">
+                    <span>Voir plus en détails</span>
+                </a>
+            </section>
+            <section>
+                <img src="src/img/expo/affiches_001.jpg" alt="Poster showing an activity">
+                <h3>
+                    Titre
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur culpa debitis dolores
+                    et fuga illo in incidunt, iusto magni odio perspiciatis praesentium quam quas saepe, sed tempora
+                    vitae voluptatibus.
+                </p>
+                <a class="ctaContact" href="#">
+                    <span>Voir plus en détails</span>
+                </a>
+            </section>
+            <section>
+                <img src="src/img/expo/affiches_001.jpg" alt="Poster showing an activity">
+                <h3>
+                    Titre
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur culpa debitis dolores
+                    et fuga illo in incidunt, iusto magni odio perspiciatis praesentium quam quas saepe, sed tempora
+                    vitae voluptatibus.
+                </p>
+                <a class="ctaContact" href="#">
+                    <span>Voir plus en détails</span>
+                </a>
+            </section>
+            <section>
+                <img src="src/img/expo/affiches_001.jpg" alt="Poster showing an activity">
+                <h3>
+                    Titre
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur culpa debitis dolores
+                    et fuga illo in incidunt, iusto magni odio perspiciatis praesentium quam quas saepe, sed tempora
+                    vitae voluptatibus.
+                </p>
+                <a class="ctaContact" href="#">
+                    <span>Voir plus en détails</span>
+                </a>
+            </section>
+            <section>
+                <img src="src/img/expo/affiches_001.jpg" alt="Poster showing an activity">
+                <h3>
+                    Titre
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur culpa debitis dolores
+                    et fuga illo in incidunt, iusto magni odio perspiciatis praesentium quam quas saepe, sed tempora
+                    vitae voluptatibus.
+                </p>
+                <a class="ctaContact" href="#">
+                    <span>Voir plus en détails</span>
+                </a>
+            </section>
+        </div>
+
     </section>
 </main>
 <footer>
