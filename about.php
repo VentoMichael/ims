@@ -42,10 +42,10 @@
         <h2 class="hidden">
             Navigation principale
         </h2>
-        <ul>
-            <li class="listLogo">
+        <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <li class="listLogo" itemscope itemtype="https://schema.org/URL">
                 <a itemprop="url"
-                   href="http://localhost:8080/"
+                   href="http://localhost:8080/index.php"
                    title="Home page"
                    class="logo">
                     <svg enable-background="new 0 0 637.1 400.2" viewBox="0 0 637.1 400.2"
@@ -176,57 +176,63 @@
             </li>
             <li class="listItems">
                 <ul>
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="photographie.php">Photographie</a></li>
-                    <li><a href="photographie.php">Bibliothèque</a></li>
-                    <li class="currentItem"><a href="about.php">À propos</a></li>
+                    <li><a itemprop="url" href="http://localhost:8080/index.php">Accueil</a></li>
+                    <li><a itemprop="url" href="http://localhost:8080/photographie.php">Photographie</a></li>
+                    <li><a itemprop="url" href="http://localhost:8080/library.php">Bibliothèque</a></li>
+                    <li><a class="currentItem" itemprop="url" href="http://localhost:8080/about.php">À propos</a></li>
                 </ul>
             </li>
             <li class="listItemContact">
-                <a href="contact.php">Contact</a>
+                <a itemprop="url" href="http://localhost:8080/contact.php">Contact</a>
             </li>
         </ul>
     </nav>
 </header>
 <main>
-    <section class="containerAboutUs containerAboutText">
+    <section class="containerAboutUs containerAboutText" itemscope itemtype="https://schema.org/Thing">
         <div class="containerTextAboutUs">
             <h2>
                 À propos de nous
             </h2>
-            <p class="aboutUsParagraph">
-
-                Un lieu pour les livres et la photographie, l’Image sans nom est un <i>lieu d’expositions liées à la
-                    photographie et aux livres</i>, souvent les deux. C'est aussi un <i>centre de documentation</i>:
-                avec quelques milliers de titres, principalement de photographie, et d'autres arts également,
-                consultables. Enfin, <i>un atelier d'impression jet d'encre</i> qui est ouvert à toute demande.
+            <div itemprop="description">
+                <p class="aboutUsParagraph">
+                    Un lieu pour les livres et la photographie, <span itemprop="name">l’Image sans nom</span> est un <i>lieu d’expositions liées à la
+                        photographie et aux livres</i>, souvent les deux. C'est aussi un <i>centre de documentation</i>:
+                    avec quelques milliers de titres, principalement de photographie, et d'autres arts également,
+                    consultables. Enfin, <i>un atelier d'impression jet d'encre</i> qui est ouvert à toute demande.
+                </p>
+                <p class="aboutUsParagraph" itemscope itemtype="https://schema.org/Organization">
+                    Le lieu se veut un point de rencontre pour tous les amoureux ou <i>amoureux du livre et de la
+                        photographie</i>,
+                    et depuis février 2018 il propose, sous l'impulsion d'<span itemprop="founder">Olivier Cornil</span>, <span itemprop="founder">Emmanuel d'Autreppe</span>,
+                    <span itemprop="founder"></span>Christophe
+                    Collas</span> et <span itemprop="founder">Matthieu Litt</span> <i>une série d'événements</i> (pour) petits et grands, ateliers et
+                    rencontres, lectures
+                    et projections, expositions et interventions, séminaires et événements...
+                </p>
+                <p class="aboutUsParagraph">
+                    Un lieu à taille humaine et à la hauteur des images, pour prendre le temps de <i>grignoter avec les
+                        yeux,
+                        découvrir, échanger&nbsp;!</i>
+                </p>
+                <p class="aboutUsParagraph">
+                    Nous sommes ouverts pendant les périodes d'exposition et sur rendez-vous
+                </p>
+            </div>
+            <p class="aboutUsParagraph" itemscope itemtype="https://schema.org/Person">
+                <a href="mailto:limagesansnom@gmail.com"><span itemprop="email">limagesansnom@gmail.com</span></a> / <a itemprop="telephone" href="tel:+32485847977"><span itemprop="telephone">0485 847 977</span></a>
             </p>
-            <p class="aboutUsParagraph">
-                Le lieu se veut un point de rencontre pour tous les amoureux ou <i>amoureux du livre et de la photographie</i>,
-                et depuis février 2018 il propose, sous l'impulsion d'Olivier Cornil, Emmanuel d'Autreppe, Christophe
-                Collas et Matthieu Litt <i>une série d'événements</i> (pour) petits et grands, ateliers et rencontres, lectures
-                et projections, expositions et interventions, séminaires et événements...
-            </p>
-            <p class="aboutUsParagraph">
-                Un lieu à taille humaine et à la hauteur des images, pour prendre le temps de <i>grignoter avec les yeux,
-                découvrir, échanger&nbsp;!</i>
-            </p>
-            <p class="aboutUsParagraph">
-                Nous sommes ouverts pendant les périodes d'exposition et sur rendez-vous
-            </p>
-            <p class="aboutUsParagraph">
-                <a href="mailto:limagesansnom@gmail.com">limagesansnom@gmail.com</a> / <a href="tel:+32485847977">0485 847
-                    977</a>
-            </p>
-            <p class="aboutUsParagraph">
+            <div itemscope itemtype="https://schema.org/PostalAddress">
+            <p itemprop="streetAddress" class="aboutUsParagraph">
                 Place Vivegnis 6 à 4000 Liège
             </p>
-            <a class="ctaContact" href="#">
+            </div>
+            <a class="ctaContact" href="http://localhost:8080/contact.php">
                 <span>Écrivez nous&nbsp;!</span>
             </a>
         </div>
         <div class="containerImageBoxRight">
-            <img class="imageBoxRight" src="src/img/about/000_ISNbefore_005.jpg"
+            <img itemprop="image" class="imageBoxRight" src="src/img/about/000_ISNbefore_005.jpg"
                  alt="Representing the front of the building">
         </div>
     </section>
@@ -234,47 +240,51 @@
         <h2>
             Notre devoir
         </h2>
-        <div class="containerAims">
+        <div class="containerAims" itemscope itemtype="https://schema.org/Thing">
             <div>
                 <section class="containerAimLibrary">
-                    <h3>
+                    <h3 itemprop="name">
                         Bibliothèque
                     </h3>
-                    <p>
-                        Vous faire découvrir des miliers de livres grâce a nôtre immense bibliothéque qui est à votre entière disposition&nbsp;!
+                    <p itemprop="description">
+                        Vous faire découvrir des miliers de livres grâce a nôtre immense bibliothéque qui est à votre
+                        entière disposition&nbsp;!
                     </p>
                 </section>
-                <a class="ctaContact" href="#">
+                <a itemprop="url" class="ctaContact" href="http://localhost:8080/library.php">
                     <span>Voir la bibliothèque</span>
                 </a>
             </div>
 
             <div>
                 <section class="containerAimPhotographie">
-                    <h3>
+                    <h3 itemprop="name">
                         Photographie
                     </h3>
-                    <p>
-                        Améliorer votre esprit créatif grace à nos multiples expositions les unes plus incroyables que les autres&nbsp;!
+                    <p itemprop="description">
+                        Améliorer votre esprit créatif grace à nos multiples expositions les unes plus incroyables que
+                        les autres&nbsp;!
                     </p>
                 </section>
-                <a class="ctaContact" href="#">
+                <a itemprop="url" class="ctaContact" href="http://localhost:8080/photographie.php">
                     <span>Voir les photographies</span>
                 </a>
             </div>
         </div>
     </section>
 </main>
-<footer>
+<footer itemscope itemtype="https://schema.org/ContactPoint" >
     <section>
         <h2>
             Contact
         </h2>
-        <p>
-            Rue vivegnis, 46
-        </p>
-        <span><a href="mailto:oli@oliviercornil.be">oli@oliviercornil.be</a></span>
-        <span><a href="tel:32494827254">+ 324 948 272 54</a></span>
+        <div itemscope itemtype="https://schema.org/PostalAddress">
+            <p itemprop="streetAddress">
+                Rue vivegnis, 46
+            </p>
+        </div>
+        <span itemprop="email"><a href="mailto:oli@oliviercornil.be">oli@oliviercornil.be</a></span>
+        <span itemprop="telephone"><a href="tel:32494827254">+ 324 948 272 54</a></span>
     </section>
     <section>
         <h2>
@@ -288,7 +298,7 @@
             Newsletter
         </h2>
         <p>
-            Ne manquez plus aucune importante exposition&nbsp;! Abonnez-vous à cette newsletter.
+            Ne manquez plus aucune importante exposition ! Abonnez-vous à cette newsletter.
         </p>
     </section>
 </footer>

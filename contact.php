@@ -42,10 +42,10 @@
         <h2 class="hidden">
             Navigation principale
         </h2>
-        <ul>
-            <li class="listLogo">
+        <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <li class="listLogo" itemscope itemtype="https://schema.org/URL">
                 <a itemprop="url"
-                   href="http://localhost:8080/"
+                   href="http://localhost:8080/index.php"
                    title="Home page"
                    class="logo">
                     <svg enable-background="new 0 0 637.1 400.2" viewBox="0 0 637.1 400.2"
@@ -176,14 +176,14 @@
             </li>
             <li class="listItems">
                 <ul>
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="photographie.php">Photographie</a></li>
-                    <li><a href="photographie.php">Bibliothèque</a></li>
-                    <li><a href="about.php">À propos</a></li>
+                    <li><a itemprop="url" href="http://localhost:8080/index.php">Accueil</a></li>
+                    <li><a itemprop="url" href="http://localhost:8080/photographie.php">Photographie</a></li>
+                    <li><a itemprop="url" href="http://localhost:8080/library.php">Bibliothèque</a></li>
+                    <li><a itemprop="url" href="http://localhost:8080/about.php">À propos</a></li>
                 </ul>
             </li>
             <li class="listItemContact currentItem">
-                <a href="contact.php">Contact</a>
+                <a itemprop="url" href="contact.php">Contact</a>
             </li>
         </ul>
     </nav>
@@ -249,16 +249,18 @@
         </div>
     </div>
 </main>
-<footer>
+<footer itemscope itemtype="https://schema.org/ContactPoint" >
     <section>
         <h2>
             Contact
         </h2>
-        <p>
+        <div itemscope itemtype="https://schema.org/PostalAddress">
+        <p itemprop="streetAddress">
             Rue vivegnis, 46
         </p>
-        <span><a href="mailto:oli@oliviercornil.be">oli@oliviercornil.be</a></span>
-        <span><a href="tel:32494827254">+ 324 948 272 54</a></span>
+            </div>
+        <span itemprop="email"><a href="mailto:oli@oliviercornil.be">oli@oliviercornil.be</a></span>
+        <span itemprop="telephone"><a href="tel:32494827254">+ 324 948 272 54</a></span>
     </section>
     <section>
         <h2>

@@ -42,10 +42,10 @@
         <h2 class="hidden">
             Navigation principale
         </h2>
-        <ul>
-            <li class="listLogo">
+        <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <li class="listLogo" itemscope itemtype="https://schema.org/URL">
                 <a itemprop="url"
-                   href="http://localhost:8080/"
+                   href="http://localhost:8080/index.php"
                    title="Home page"
                    class="logo">
                     <svg enable-background="new 0 0 637.1 400.2" viewBox="0 0 637.1 400.2"
@@ -176,87 +176,91 @@
             </li>
             <li class="listItems">
                 <ul>
-                    <li class="currentItem"><a href="index.php">Accueil</a></li>
-                    <li><a href="photographie.php">Photographie</a></li>
-                    <li><a href="photographie.php">Bibliothèque</a></li>
-                    <li><a href="about.php">À propos</a></li>
+                    <li><a class="currentItem" itemprop="url" href="http://localhost:8080/index.php">Accueil</a></li>
+                    <li><a itemprop="url" href="http://localhost:8080/photographie.php">Photographie</a></li>
+                    <li><a itemprop="url" href="http://localhost:8080/library.php">Bibliothèque</a></li>
+                    <li><a itemprop="url" href="http://localhost:8080/about.php">À propos</a></li>
                 </ul>
             </li>
             <li class="listItemContact">
-                <a href="contact.php">Contact</a>
+                <a itemprop="url" href="contact.php">Contact</a>
             </li>
         </ul>
     </nav>
 </header>
 <main>
+    <div itemscope itemtype="https://schema.org/Thing">
     <section class="containerAboutUs">
         <div class="containerTextAboutUs">
-            <h2>
+            <h2 itemprop="name">
                 Nous, brièvement
             </h2>
-            <p class="aboutUsParagraph">
+            <p itemprop="description" class="aboutUsParagraph">
                 Un lieu pour les livres et la photographie. Un lieu à taille humaine et à la hauteur des images, pour
                 prendre le temps de grignoter avec les yeux, découvrir, échanger!
             </p>
-            <a class="ctaContact" href="#">
+            <a itemprop="url" class="ctaContact" href="http://localhost:8080/about.php">
                 <span>À propos de nous</span>
             </a>
         </div>
         <div class="containerImageBoxRight">
-            <img class="imageBoxRight" src="src/img/about/000_ISNbefore_005.jpg" alt="Representing the front of the building">
+            <img itemprop="image" class="imageBoxRight" src="src/img/about/000_ISNbefore_005.jpg" alt="Representing the front of the building">
         </div>
     </section>
     <section class="containerPhotographie">
         <div class="containerImageBoxLeft">
-            <img class="imageBoxleft" src="src/img/photographie.jpg" alt="Representing photography section">
+            <img itemprop="image" class="imageBoxleft" src="src/img/photographie.jpg" alt="Representing photography section">
         </div>
         <div class="containerTextAboutUs">
-            <h2>
+            <h2 itemprop="name">
                 Photographie
             </h2>
-            <p class="aboutUsParagraph">
+            <p itemprop="description" class="aboutUsParagraph">
                 Nos expositions visent à améliorer votre esprit créatif, à vous faire passer du temps en bonne compagnie
                 mais aussi à vous divertir. N'hésitez pas à savoir quand sera la prochaine !
             </p>
-            <a class="ctaContact" href="#">
+            <a itemprop="url" class="ctaContact" href="http://localhost:8080/photographie.php">
                 <span>Toutes les photographies</span>
             </a>
         </div>
     </section>
     <section class="containerLibrary">
         <div class="containerTextAboutUs">
-            <h2>
+            <h2 itemprop="name">
                 Bibliothèque
             </h2>
-            <p class="aboutUsParagraph">
+            <p itemprop="description" class="aboutUsParagraph">
                 Nos livres sont des milliers et des milliers qui sont entièrement à votre disposition, ils sont là pour
                 vous cultiver, vous faire passer le temps en bonne compagnie. N'hésitez pas à nous envoyer un message,
                 si vous êtes intéressé!
             </p>
             <div class="containerBooks">
-                <a class="ctaContact" href="#">
+                <a itemprop="url" class="ctaContact" href="http://localhost:8080/library">
                     <span>Le livre du mois</span>
                 </a>
-                <a class="ctaContact" href="#">
+                <a itemprop="url" class="ctaContact" href="http://localhost:8080/library/bookOne">
                     <span>Tous les livres</span>
                 </a>
             </div>
         </div>
         <div class="containerImageBoxRight">
-            <img class="imageBoxRight" src="src/img/001_019.jpg" alt="Representing library section">
+            <img itemprop="image" class="imageBoxRight" src="src/img/001_019.jpg" alt="Representing library section">
         </div>
     </section>
+    </div>
 </main>
-<footer>
+<footer itemscope itemtype="https://schema.org/ContactPoint" >
     <section>
         <h2>
             Contact
         </h2>
-        <p>
-            Rue vivegnis, 46
-        </p>
-        <span><a href="mailto:oli@oliviercornil.be">oli@oliviercornil.be</a></span>
-        <span><a href="tel:32494827254">+ 324 948 272 54</a></span>
+        <div itemscope itemtype="https://schema.org/PostalAddress">
+            <p itemprop="streetAddress">
+                Rue vivegnis, 46
+            </p>
+        </div>
+        <span itemprop="email"><a href="mailto:oli@oliviercornil.be">oli@oliviercornil.be</a></span>
+        <span itemprop="telephone"><a href="tel:32494827254">+ 324 948 272 54</a></span>
     </section>
     <section>
         <h2>

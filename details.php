@@ -42,12 +42,12 @@
         <h2 class="hidden">
             Navigation principale
         </h2>
-        <ul>
-            <li class="listLogo">
+        <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <li class="listLogo" itemscope itemtype="https://schema.org/URL">
                 <a itemprop="url"
-                   href="http://localhost:8080/"
+                   href="http://localhost:8080/index.php"
                    title="Home page"
-                   class="logo">Back to home
+                   class="logo">
                     <svg enable-background="new 0 0 637.1 400.2" viewBox="0 0 637.1 400.2"
                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <clipPath id="a">
@@ -176,35 +176,35 @@
             </li>
             <li class="listItems">
                 <ul>
-                    <li class="currentItem"><a href="index.php">Accueil</a></li>
-                    <li><a href="photographie.php">Photographie</a></li>
-                    <li><a href="photographie.php">Bibliothèque</a></li>
-                    <li><a href="about.php">À propos</a></li>
+                    <li><a itemprop="url" href="http://localhost:8080/index.php">Accueil</a></li>
+                    <li><a itemprop="url" href="http://localhost:8080/photographie.php">Photographie</a></li>
+                    <li><a itemprop="url" href="http://localhost:8080/library.php">Bibliothèque</a></li>
+                    <li><a itemprop="url" href="http://localhost:8080/about.php">À propos</a></li>
                 </ul>
             </li>
             <li class="listItemContact">
-                <a href="contact.php">Contact</a>
+                <a itemprop="url" href="contact.php">Contact</a>
             </li>
         </ul>
     </nav>
 </header>
 <main>
-    <section class="containerAboutUs">
+    <section class="containerAboutUs" itemscope itemtype="https://schema.org/Thing">
         <div class="containerTextAboutUs">
-            <h2>
+            <h2 itemprop="name">
                 Titre
             </h2>
-            <p class="aboutUsParagraph">
+            <p itemprop="description" class="aboutUsParagraph">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus aspernatur consectetur,
                 consequuntur delectus distinctio error esse eum hic ipsam labore laboriosam molestias nihil nisi quae
                 quod rerum tempora totam.
             </p>
-            <a class="ctaContact" href="#">
+            <a itemprop="url" class="ctaContact" href="http://localhost:8080/contact.php">
                 <span>Nous contactez</span>
             </a>
         </div>
         <div class="containerImageBoxRight">
-            <img class="imageBoxRight" src="src/img/expo/affiches_001.jpg" alt="Representing the front of the building">
+            <img itemprop="image" class="imageBoxRight" src="src/img/expo/affiches_001.jpg" alt="Representing the front of the building">
         </div>
     </section>
     <div class="svgScroll">
@@ -258,16 +258,18 @@
         </div>
     </div>
 </main>
-<footer>
+<footer itemscope itemtype="https://schema.org/ContactPoint" >
     <section>
         <h2>
             Contact
         </h2>
-        <p>
-            Rue vivegnis, 46
-        </p>
-        <span><a href="mailto:oli@oliviercornil.be">oli@oliviercornil.be</a></span>
-        <span><a href="tel:32494827254">+ 324 948 272 54</a></span>
+        <div itemscope itemtype="https://schema.org/PostalAddress">
+            <p itemprop="streetAddress">
+                Rue vivegnis, 46
+            </p>
+        </div>
+        <span itemprop="email"><a href="mailto:oli@oliviercornil.be">oli@oliviercornil.be</a></span>
+        <span itemprop="telephone"><a href="tel:32494827254">+ 324 948 272 54</a></span>
     </section>
     <section>
         <h2>
